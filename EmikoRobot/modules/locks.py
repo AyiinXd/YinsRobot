@@ -341,12 +341,7 @@ def del_lockables(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user
     message = update.effective_message  # type: Optional[Message]
-
-    chat_id = str(chat.id)[1:]
     if is_approved(chat.id, user.id):
-    is_user_approved = mention_html(user.id, user.first_name)
-
-    if is_user_approved in approve_list:
         return
     for lockable, filter in LOCK_TYPES.items():
         if lockable == "rtl":
