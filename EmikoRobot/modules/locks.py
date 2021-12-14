@@ -18,6 +18,7 @@ from EmikoRobot.modules.helper_funcs.chat_status import (
     is_bot_admin,
     user_admin,
 )
+from EmikoRobot.modules.sql.approve_sql import is_approved
 from EmikoRobot.modules.log_channel import loggable
 from EmikoRobot.modules.connection import connected
 from EmikoRobot.modules.helper_funcs.alternate import send_message, typing_action
