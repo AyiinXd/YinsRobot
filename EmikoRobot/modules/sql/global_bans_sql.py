@@ -161,6 +161,6 @@ def migrate_chat(old_chat_id, new_chat_id):
         SESSION.commit()
 
 
-# Create in memory userid to avoid disk access
+# create in memory userid to avoid disk access
 __load_gbanned_userid_list()
 __load_gban_stat_list()
