@@ -7,7 +7,7 @@ from io import BytesIO
 import EmikoRobot.modules.sql.welcome_sql as sql
 from EmikoRobot import (
     DEV_USERS,
-    log,
+    ERROR_LOGS as log,
     OWNER_ID,
     SUDO_USERS,
     SUPPORT_USERS,
