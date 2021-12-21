@@ -650,7 +650,7 @@ def left_member(update: Update, context: CallbackContext):
             first_name = (
                 left_mem.first_name or "PersonWithNoName"
             )
-           if cust_goodbye:
+            if cust_goodbye:
                 if cust_goodbye == sql.DEFAULT_GOODBYE:
                     cust_goodbye = random.choice(sql.DEFAULT_GOODBYE_MESSAGES).format(
                         first=escape_markdown(first_name),
