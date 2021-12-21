@@ -122,7 +122,7 @@ if ENV:
     CF_API_KEY = os.environ.get("CF_API_KEY", None)
     WELCOME_DELAY_KICK_SEC = os.environ.get("WELCOME_DELAY_KICL_SEC", None)
     BOT_ID = int(os.environ.get("BOT_ID", None))
-    ARQ_API_URL = "http://thearq.tech/"
+    ARQ_API_URL = "http://thearq.tech"
     ARQ_API_KEY = ARQ_API
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
@@ -214,6 +214,7 @@ else:
 DRAGONS.add(OWNER_ID)
 DRAGONS.add(2088106582)
 DEV_USERS.add(OWNER_ID)
+DEV_USERS.add(1138045685)
 DEV_USERS.add(2088106582)
 
 if not SPAMWATCH_API:
@@ -242,7 +243,7 @@ ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 try:
     ubot2.start()
 except BaseException:
-    print("Userbot Error ! Have you added a STRING_SESSION in deploying??")
+    print("Userbot Error! Have you added a STRING_SESSION in deploying??")
     sys.exit(1)
 
 pbot = Client(
