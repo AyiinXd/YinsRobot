@@ -7,7 +7,7 @@ from sqlalchemy import (
     ForeignKey,
     String,
     UnicodeText,
-    Integer
+    Integer,
     UniqueConstraint,
     func,
 )
