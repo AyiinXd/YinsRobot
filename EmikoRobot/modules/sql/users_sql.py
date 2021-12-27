@@ -5,9 +5,9 @@ from EmikoRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
+    Integer,
     String,
     UnicodeText,
-    Integer,
     UniqueConstraint,
     func,
 )
@@ -42,7 +42,7 @@ class Chats(BASE):
 
 class ChatMembers(BASE):
     __tablename__ = "chat_members"
-    priv_chat_id = Column(Integer, primary_key=True)
+    priv_chat_id = Column(BigInteger, primary_key=True)
     # NOTE: Use dual primary key instead of private primary key?
     chat = Column(
         String(14),
@@ -131,7 +131,7 @@ def get_userid_by_name(username):
 
 def get_name_by_userid(user_id):
     try:
-        return SESSION.query(Users).get(Users.user_id == bigint(user_id)).first()
+        return SESSION.query(Users).get(Users.user_id == int(user_id)).first()
     finally:
         SESSION.close()
 
@@ -160,7 +160,7 @@ def get_all_users():
 def get_user_num_chats(user_id):
     try:
         return (
-            SESSION.query(ChatMembers).filter(ChatMembers.user == bigint(user_id)).count()
+            SESSION.query(ChatMembers).filter(ChatMembers.user == int(user_id)).count()
         )
     finally:
         SESSION.close()
@@ -169,7 +169,7 @@ def get_user_num_chats(user_id):
 def get_user_com_chats(user_id):
     try:
         chat_members = (
-            SESSION.query(ChatMembers).filter(ChatMembers.user == bigint(user_id)).all()
+            SESSION.query(ChatMembers).filter(ChatMembers.user == int(user_id)).all()
         )
         return [i.chat for i in chat_members]
     finally:
