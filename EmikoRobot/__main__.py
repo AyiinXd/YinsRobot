@@ -92,9 +92,9 @@ PM_START_TEXT = """
 
 buttons = [
     [
-#        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
-#    ],
-#    [
+        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
+    ],
+    [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm Aika. Nice to meet You.",
+            f"👋 Hi, I'm Emiko. Nice to meet You.",
             parse_mode=ParseMode.HTML
        )
 
