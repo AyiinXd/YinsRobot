@@ -23,6 +23,7 @@ def anime_quote():
     character = dic["character"]
     anime = dic["anime"]
     return quote, character, anime
+
 def quotes(update: Update, context: CallbackContext):
     message = update.effective_message
     quote, character, anime = anime_quote()
@@ -36,6 +37,7 @@ def quotes(update: Update, context: CallbackContext):
         reply_markup=keyboard,
         parse_mode=ParseMode.HTML,
     )
+
 def change_quote(update: Update, context: CallbackContext):
     query = update.callback_query
     chat = update.effective_chat
@@ -55,6 +57,7 @@ def animequotes(update: Update, context: CallbackContext):
     reply_photo = message.reply_to_message.reply_photo if message.reply_to_message else message.reply_photo
     reply_photo(
         random.choice(QUOTES_IMG))
+
 QUOTES_IMG = (
       "https://i.imgur.com/Iub4RYj.jpg", 
       "https://i.imgur.com/uvNMdIl.jpg", 
@@ -131,21 +134,18 @@ CHANGE_QUOTE = CallbackQueryHandler(
     change_quote, pattern=r"change_.*")
 QUOTE_CHANGE = CallbackQueryHandler(
     change_quote, pattern=r"quote_.*")
+
 dispatcher.add_handler(CHANGE_QUOTE)
 dispatcher.add_handler(QUOTE_CHANGE)
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 dispatcher.add_handler(QUOTES_HANDLER)
 
 __command_list__ = [
-
     "animequotes",
-    "quote"
-
+    "quote",
 ]
 
 __handlers__ = [
-
     ANIMEQUOTES_HANDLER,
-    QUOTES_HANDLER
-
+    QUOTES_HANDLER,
 ]
