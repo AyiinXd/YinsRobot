@@ -50,9 +50,7 @@ def _onUnMuteRequest(client, cb):
                     show_alert=True,
                 )
         else:
-            if (
-                    not client.get_chat_member(chat_id, (client.get_me()).id).status
-                        == "administrator"
+            if (not client.get_chat_member(chat_id, (client.get_me()).id).status == "administrator"
             ):
                 client.send_message(
                     chat_id,
@@ -73,10 +71,8 @@ def _check_member(client, message):
     chat_db = sql.fs_settings(chat_id)
     if chat_db:
         user_id = message.from_user.id
-        if (
-                not client.get_chat_member(chat_id, user_id).status
-                    in ("administrator", "creator")
-                and not user_id in SUDO_USERS
+        if (not client.get_chat_member(chat_id, user_id).status in ("administrator", "creator")
+            and not user_id in SUDO_USERS
         ):
             channel = chat_db.channel
             try:
@@ -109,7 +105,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "😕 **Emikoo is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                        "😕 **Aika is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
