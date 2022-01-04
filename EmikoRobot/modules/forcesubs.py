@@ -105,7 +105,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "😕 **Aika is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                        "😕 **Emiko is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
@@ -132,7 +132,7 @@ def config(client, message):
                 )
                 try:
                     for chat_member in client.get_chat_members(
-                            message.chat.id, filter="restricted"
+                        message.chat.id, filter="restricted"
                     ):
                         if chat_member.restricted_by.id == (client.get_me()).id:
                             client.unban_chat_member(chat_id, chat_member.user.id)
