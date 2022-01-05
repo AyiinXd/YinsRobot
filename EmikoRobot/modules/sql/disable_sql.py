@@ -1,7 +1,9 @@
+
 import threading
 
-from EmikoRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
+
+from EmikoRobot.modules.sql import BASE, SESSION
 
 
 class Disable(BASE):
