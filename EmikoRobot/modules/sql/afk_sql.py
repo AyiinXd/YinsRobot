@@ -1,7 +1,10 @@
+
 import threading
 
-from EmikoRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, UnicodeText
+
+from EmikoRobot.modules.sql import BASE, SESSION
+
 
 class AFK(BASE):
     __tablename__ = "afk_users"
