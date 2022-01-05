@@ -1,7 +1,8 @@
 import threading
 
-from EmikoRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, UnicodeText
+
+from EmikoRobot.modules.sql import BASE, SESSION
 
 
 class CleanerBlueTextChatSettings(BASE):

@@ -1,7 +1,10 @@
 import threading
-from sqlalchemy import Column, String, UnicodeText, func, distinct
-from EmikoRobot.modules.sql import BASE, SESSION
+
+from sqlalchemy import Column, String
 from sqlalchemy.sql.sqltypes import BigInteger
+
+from EmikoRobot.modules.sql import BASE, SESSION
+
 
 class Approvals(BASE):
     __tablename__ = "approval"
@@ -51,9 +54,9 @@ def list_approved(chat_id):
     try:
         return (
             SESSION.query(Approvals)
-            .filter(Approvals.chat_id == str(chat_id))
-            .order_by(Approvals.user_id.asc())
-            .all()
+                .filter(Approvals.chat_id == str(chat_id))
+                .order_by(Approvals.user_id.asc())
+                .all()
         )
     finally:
         SESSION.close()
