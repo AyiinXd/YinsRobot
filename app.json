@@ -43,11 +43,6 @@
          "required": true,
          "value": ""
       },    
-      "SQLALCHEMY_DATABASE_URI": {
-         "description": "Your postgres sql db, empty this field if you dont have one.",
-         "required": false,
-         "value": "sqldbtype://username:pw@hostname:port/db_name"
-      },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
@@ -120,14 +115,19 @@
          "value": "-xyz"
      }, 
 
-      "API_OPENWEATHER": {
-        "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
+      "OPENWEATHERMAP_ID": {
+        "description": "Get your own API from https://api.openweathermap.org/data/2.5/weather",
         "value": "",
         "required": false
       },
 
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
+         "required": false,
+         "value": ""
+     },
+      "ERROR_LOG": {
+         "description": "ID of log for show error.",
          "required": false,
          "value": ""
      },
