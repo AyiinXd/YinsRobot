@@ -175,7 +175,7 @@ else:
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
 
-    DB_URL = Config.SQLALCHEMY_DATABASE_URI
+    DB_URL = Config._DATABASE_URL
     MONGO_DB_URI = Config.MONGO_DB_URI
     ARQ_API = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
