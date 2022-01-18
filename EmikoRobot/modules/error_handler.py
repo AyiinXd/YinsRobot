@@ -9,7 +9,7 @@ import requests
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import CallbackContext, CommandHandler
 
-from EmikoRobot import dispatcher, ERROR_LOGS, DEV_USERS
+from EmikoRobot import dispatcher, ERROR_LOG, DEV_USERS
 
 pretty_errors.mono()
 
@@ -88,7 +88,7 @@ def error_callback(update: Update, context: CallbackContext):
             with open("error.txt", "w+") as f:
                 f.write(pretty_message)
             context.bot.send_document(
-                ERROR_LOGS,
+                ERROR_LOG,
                 open("error.txt", "rb"),
                 caption=f"#{context.error.identifier}\n<b>Your feature's make an error for you, check this:"
                 f"</b>\n<code>{e}</code>",
@@ -98,7 +98,7 @@ def error_callback(update: Update, context: CallbackContext):
         key = key.get("key")
         url = f"https://www.toptal.com/developers/hastebin/{key}"
         context.bot.send_message(
-            ERROR_LOGS,
+            ERROR_LOG,
             text=f"#{context.error.identifier}\n<b>Your feature's make an error for you, check this:"
             f"</b>\n<code>{e}</code>",
             reply_markup=InlineKeyboardMarkup(
