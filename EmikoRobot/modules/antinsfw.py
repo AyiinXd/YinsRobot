@@ -100,7 +100,7 @@ __Use `/antinsfw off` to disable this.__
 async def nsfw_scan_command(_, message):
     if not message.reply_to_message:
         await message.reply_text(
-            "Reply to an image/document/sticker/animation to scan it."
+            "`Reply to an image/document/sticker/animation to scan it.`"
         )
         return
     reply = message.reply_to_message
@@ -115,10 +115,10 @@ async def nsfw_scan_command(_, message):
             "Reply to an image/document/sticker/animation to scan it."
         )
         return
-    m = await message.reply_text("Scanning")
+    m = await message.reply_text("`Scanning...`")
     file_id = await get_file_id_from_message(reply)
     if not file_id:
-        return await m.edit("Something wrong happened.")
+        return await m.edit("`Something wrong happened...|")
     file = await pbot.download_media(file_id)
     try:
         results = await arq.nsfw_scan(file=file)
