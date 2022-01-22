@@ -212,7 +212,7 @@ def promote(update: Update, context: CallbackContext) -> str:
             can_edit_messages=bot_member.can_edit_messages,
             can_delete_messages=bot_member.can_delete_messages,
             can_invite_users=bot_member.can_invite_users,
-            # can_promote_members=bot_member.can_promote_members,
+            can_manage_voice_chats=bot_member.can_manage_voice_chats,
             can_restrict_members=bot_member.can_restrict_members,
             can_pin_messages=bot_member.can_pin_messages,
         )
