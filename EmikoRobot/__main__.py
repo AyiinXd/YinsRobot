@@ -15,6 +15,7 @@ from EmikoRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
+    BOT_USERNAME as bu,
     LOGGER,
     OWNER_ID,
     PORT,
@@ -102,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Emiko To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="➗ Add Emiko To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -110,7 +111,6 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/5ff1cb39902809148f07f.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @excrybaby \
