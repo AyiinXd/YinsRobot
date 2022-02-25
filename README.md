@@ -22,7 +22,7 @@
 - First fork this repository.
 - Then change the deploy link bellow.
 - This step must be doing because mine link is violates the salesforce acceptable use.
-- You can just change the name of github on deploy link and done, the repos can he deployed on heroku.
+- You can just change the name of github on deploy link and done, the repos able to deploy on heroku.
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/kennedy-ex/EmikoRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
