@@ -13,6 +13,9 @@ from sqlalchemy import (
 )
 from sqlalchemy.sql.sqltypes import BigInteger
 
+from EmikoRobot import dispatcher
+from EmikoRobot.modules.sql import BASE, SESSION
+
 
 class Users(BASE):
     __tablename__ = "users"
@@ -108,8 +111,8 @@ def update_user(user_id, username, chat_id=None, chat_name=None):
 
         member = (
             SESSION.query(ChatMembers)
-            .filter(ChatMembers.chat == chat.chat_id, ChatMembers.user == user.user_id)
-            .first()
+                .filter(ChatMembers.chat == chat.chat_id, ChatMembers.user == user.user_id)
+                .first()
         )
         if not member:
             chat_member = ChatMembers(chat.chat_id, user.user_id)
@@ -122,8 +125,8 @@ def get_userid_by_name(username):
     try:
         return (
             SESSION.query(Users)
-            .filter(func.lower(Users.username) == username.lower())
-            .all()
+                .filter(func.lower(Users.username) == username.lower())
+                .all()
         )
     finally:
         SESSION.close()
@@ -199,8 +202,8 @@ def migrate_chat(old_chat_id, new_chat_id):
 
         chat_members = (
             SESSION.query(ChatMembers)
-            .filter(ChatMembers.chat == str(old_chat_id))
-            .all()
+                .filter(ChatMembers.chat == str(old_chat_id))
+                .all()
         )
         for member in chat_members:
             member.chat = str(new_chat_id)
