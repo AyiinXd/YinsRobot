@@ -40,7 +40,7 @@ logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLeve
 LOGGER = logging.getLogger('[YinsRobot]')
 LOGGER.info("Yins is starting. | An Ayiin Support Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
-LOGGER.info("Project maintained by: github.com/kennedy-ex (t.me/AyiinXd)")
+LOGGER.info("Project maintained by: github.com/AyiinXd (t.me/AyiinXd)")
 
 # if version < 3.9, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 9:
