@@ -17,14 +17,6 @@
 <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
 </p>
 
-### TUTORIAL
-
-- First fork this repository.
-- Then change the deploy link bellow.
-- This step must be doing because mine link is violates the salesforce acceptable use.
-- You can just change the name of github on deploy link and done, the repos able to deploy on heroku.
-- Full Tutorial - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://youtu.be/GMaYMYhf_Vk)
-
 
 ```
 This Bot is Created by KennedyProject, If your kanging this without fork at least give a credit to get a smile of my hard work. 
@@ -36,6 +28,20 @@ This Bot is Created by KennedyProject, If your kanging this without fork at leas
 - WilliamButcherBot
 - AyiinXd
 ```
+
+### TUTORIAL LINK DEPLOY
+```
+- Pertama fork repositori ini.
+- Kemudian ubah tautan deploy di bawah ini.
+- Langkah ini harus dilakukan karena tautan saya melanggar penggunaan yang dapat diterima oleh tenaga penjualan.
+- ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ 
+- https://heroku.com/deploy?template=https://github.com/AyiinXd/YinsRobot
+- Anda hanya perlu mengubah nama github 'AyiinXd' Menjadi nama github anda.
+- Silahkan ubah tombol link deploy dibawah ini.
+```
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AyiinXd/YinsRobot)
+
 
 ### Support
 <p>
