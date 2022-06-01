@@ -35,12 +35,10 @@ This Bot is Created by KennedyProject, If your kanging this without fork at leas
 - Kemudian ubah tautan deploy di bawah ini.
 - Langkah ini harus dilakukan karena tautan saya melanggar penggunaan yang dapat diterima oleh tenaga penjualan.
 - ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ 
-- https://heroku.com/deploy?template=https://github.com/AyiinXd/YinsRobot
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AyiinXd/YinsRobot)
 - Anda hanya perlu mengubah nama github 'AyiinXd' Menjadi nama github anda.
 - Silahkan ubah tombol link deploy dibawah ini.
 ```
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AyiinXd/YinsRobot)
 
 
 ### Support
