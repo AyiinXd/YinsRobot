@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+            f"👋 Hi, Saya {dispatcher.bot.first_name}. Senang bertemu dengan Anda.",
             parse_mode=ParseMode.HTML
        )
 
@@ -798,7 +798,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "✨ Hai, YinzRobot Berhasil Diaktifkan",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:

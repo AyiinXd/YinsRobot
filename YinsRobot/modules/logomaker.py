@@ -113,7 +113,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Yins Robot](https://t.me/EmiexRobot)",
+            caption="Logo by [Yins Robot](https://t.me/YinzRobot)",
             force_document=False,
         )
         os.remove(flnme)

@@ -10,11 +10,11 @@
       ],
     
    "logo":    "https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg",  
-   "repository": "https://github.com/AyiinXd/https://github.com/AyiinXd/YinsRobot",
+   "repository": "https://github.com/AyiinXd/YinsRobot",
    "addons": [
           {
          "options": {
-            "version": "12"
+            "version": "13"
          },
          "plan": "heroku-postgresql"
       }
@@ -46,7 +46,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2088106582"
+         "value": "1700405732"
      },
 
       "STRING_SESSION": {
@@ -56,7 +56,7 @@
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": ""
+        "value": "ba40ec17-19ce-470f-9a27-c05d0e458920"
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
@@ -64,7 +64,7 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "emiexrobot"
+         "value": "YinzRobot"
       },
 
       "BOT_ID": {
@@ -86,23 +86,15 @@
          "required": true,
          "value": ""
       },
-      "IBM_WATSON_CRED_URL": {
-         "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-         "required": false
-     },
-     "IBM_WATSON_CRED_PASSWORD": {
-        "description": "This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-        "required": false
-     },
      "EVENT_LOGS": {
-         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-100123456'",
          "required": true,
-         "value": "-1001626554919"
+         "value": "-100"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001626554919"
+         "value": "-100"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
@@ -115,12 +107,6 @@
          "value": "-xyz"
      }, 
 
-      "OPENWEATHERMAP_ID": {
-        "description": "Get your own API from https://api.openweathermap.org/data/2.5/weather",
-        "value": "",
-        "required": false
-      },
-
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
@@ -129,18 +115,12 @@
       "ERROR_LOG": {
          "description": "ID of log for show error.",
          "required": false,
-         "value": ""
-     },
+         "value": "-100"
+      },
         "ARQ_API": {
             "description": "Get this from @ARQRobot.",
             "required": true
         },
-
-      "SPAMWATCH_API": {
-         "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
-         "required": false,
-         "value": ""
-      }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
          "value": "True"
@@ -169,16 +149,6 @@
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
          "value": "ANYTHING"
       },
-      "WEBHOOK": {
-         "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
-         "required": false,
-         "value": ""
-      },
-      "PORT": {
-         "description": "Port to use for your webhooks. Better leave this as it is on heroku",
-         "required": false,
-         "value": ""
-      },
       "URL": {
          "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
          "required": false,
@@ -189,11 +159,6 @@
          "required": false,
          "value": "rss"
       }, 
-      "BL_CHATS": {
-         "description": "List of chats you want blacklisted.",
-         "required": false,
-         "value": ""
-      },
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
          "value": "True"
@@ -201,21 +166,11 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://www.paypal.me/PaulSonOfLars"
+         "value": "https://t.me/AyiinSupport/100"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
-         "value": "True"
-      },
-      "BAN_STICKER": {
-         "description": "ID of the sticker you want to use when banning people.",
-         "required": false,
-         "value": ""
-      },
-      "WALL_API": {
-         "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
-         "required": false,
-         "value": ""
+         "value": "False"
       }
       
    }
