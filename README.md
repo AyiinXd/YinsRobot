@@ -32,13 +32,12 @@ This Bot is Created by KennedyProject, If your kanging this without fork at leas
 ### TUTORIAL LINK DEPLOY
 ```
 - Pertama fork repositori ini.
-- Kemudian ubah tautan deploy di bawah ini.
-- Langkah ini harus dilakukan karena tautan saya melanggar penggunaan yang dapat diterima oleh tenaga penjualan.
+- Kemudian Salin Link Fork Repo Anda.
+- Dan Klik Tombol Dibawah Ini.
 - ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AyiinXd/YinsRobot)
-- Anda hanya perlu mengubah nama github 'AyiinXd' Menjadi nama github anda.
-- Silahkan ubah tombol link deploy dibawah ini.
 ```
+
+[![Deploy](https://vercel.com/button)](https://ayiin.vercel.app)
 
 
 ### Support
