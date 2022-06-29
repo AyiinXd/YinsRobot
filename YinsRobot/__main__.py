@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an Yins management bot [✨](https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg)
+✪ I'm an Reza ultramen management bot [✨](https://telegra.ph/file/9b00e6971eb89e12bd67e.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Yins To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add Reza ultramen To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -441,8 +441,8 @@ def yins_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/AyiinXdSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/AyiinSupport"),
+                    InlineKeyboardButton(text="Support", url="t.me/musikkuygy"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/musikkuUltramen"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="yins_"),
