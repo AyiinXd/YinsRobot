@@ -73,8 +73,8 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "{} Kembali Untuk Menjajah Para Sagapung!",
                 "Welcomek Taik! {}",
                 "Siapa Ini {}?\nOh Cucu Dakjal Telah Kembali!",
-                "Liat si caper {} balik lagi 
-                "Si {} Korban Ghosting Nongol ni? 
+                "Liat si caper {} balik lagi", 
+                "Si {} Korban Ghosting Nongol ni?", 
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
