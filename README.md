@@ -2,7 +2,7 @@
   <img src="https://telegra.ph/file/64f4b1e3ab6d6911447d2.jpg">
 </p>
 
-<h4><p align="center"> YINS ROBOT </p></h4>
+<h4><p align="center"> ANIME </p></h4>
 
 <p align="center">Yins Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
