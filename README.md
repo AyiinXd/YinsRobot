@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://te.legra.ph/file/b06476d5da032bcf02143.jpg">
+  <img src="">
 </p>
 
 <h4><p align="center"> ANIME </p></h4>
